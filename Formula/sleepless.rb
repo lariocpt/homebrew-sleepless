@@ -1,7 +1,7 @@
 class Sleepless < Formula
   desc "Keep your computer awake for exactly as long as it runs"
   homepage "https://github.com/lariocpt/sleepless"
-  version "0.1.2"
+  version "0.1.3"
   license "MIT"
 
   # Prebuilt binaries rather than a source build: the point of the tool is that you
@@ -10,24 +10,24 @@ class Sleepless < Formula
   # attribute, so Gatekeeper does not block these.
   on_macos do
     on_arm do
-      url "https://github.com/lariocpt/sleepless/releases/download/v0.1.2/sleepless-aarch64-apple-darwin-v0.1.2.tar.gz"
-      sha256 "700b0f61dd83b3ecfec1e84e595ff2b40064b857acd7cd472bc98b3895965006"
+      url "https://github.com/lariocpt/sleepless/releases/download/v0.1.3/sleepless-aarch64-apple-darwin-v0.1.3.tar.gz"
+      sha256 "c9f49113f45c97e36dee71628ab3ecdf5db34ca5d61d0437f7f8c014f1ff0884"
     end
     on_intel do
-      url "https://github.com/lariocpt/sleepless/releases/download/v0.1.2/sleepless-x86_64-apple-darwin-v0.1.2.tar.gz"
-      sha256 "7db652eb0308a722c3c77729a1907515fd126e2a1e77287fb040f05c8ced9f6d"
+      url "https://github.com/lariocpt/sleepless/releases/download/v0.1.3/sleepless-x86_64-apple-darwin-v0.1.3.tar.gz"
+      sha256 "3a6edea9bb69069c319aee69117ba8f88d0a407c2dfd32f40a3474d2f2eabe1f"
     end
   end
 
   # Linuxbrew gets the static musl builds, which have no libc floor at all.
   on_linux do
     on_arm do
-      url "https://github.com/lariocpt/sleepless/releases/download/v0.1.2/sleepless-aarch64-unknown-linux-musl-v0.1.2.tar.gz"
-      sha256 "5dd8f73ebd0eff261ce61c4fb7c73228c58d0d7f43a7fe3fe89a6b3a1b9c2bca"
+      url "https://github.com/lariocpt/sleepless/releases/download/v0.1.3/sleepless-aarch64-unknown-linux-musl-v0.1.3.tar.gz"
+      sha256 "f0aecb6142ad762f17c238ad17f489b48859c60f647cda19ed256a0cece43728"
     end
     on_intel do
-      url "https://github.com/lariocpt/sleepless/releases/download/v0.1.2/sleepless-x86_64-unknown-linux-musl-v0.1.2.tar.gz"
-      sha256 "be0141c59f0592b4117ce45edb7709422afeb80374562f0985fde23ba9d77dfa"
+      url "https://github.com/lariocpt/sleepless/releases/download/v0.1.3/sleepless-x86_64-unknown-linux-musl-v0.1.3.tar.gz"
+      sha256 "f08204604e79973557267ad670e9bec48815ebec688096d41c738778ddc354e7"
     end
   end
 
